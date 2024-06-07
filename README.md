@@ -5,4 +5,4 @@
 - Device NFC is turned on
 - Device is charging (or the battery is 100%) or the battery is up to 90%
 
-## video
+## Video
