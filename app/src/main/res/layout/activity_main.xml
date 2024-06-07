@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/security_background"
+    android:background="@color/white"
     tools:context=".MainActivity">
 
     <!-- Image 1: Left -->
@@ -11,44 +11,87 @@
         android:id="@+id/image1"
         android:layout_width="108dp"
         android:layout_height="108dp"
-        android:layout_above="@id/centerButton"
         android:layout_alignParentStart="true"
         android:layout_marginStart="16dp"
-        android:layout_marginBottom="175dp"
-        android:src="@drawable/wifi" />
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="150dp"
+
+        android:src="@drawable/no_wifi" />
 
     <!-- Image 2: Center -->
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/image2"
         android:layout_width="108dp"
         android:layout_height="108dp"
-        android:layout_above="@id/centerButton"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="175dp"
-        android:src="@drawable/nfc" />
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="150dp"
+        android:src="@drawable/no_nfc" />
 
     <!-- Image 3: Right -->
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/image3"
         android:layout_width="108dp"
         android:layout_height="108dp"
-        android:layout_above="@id/centerButton"
         android:layout_alignParentEnd="true"
+        android:layout_marginTop="25dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="175dp"
-        android:src="@drawable/ic_launcher_background" />
+        android:layout_marginBottom="150dp"
+        android:src="@drawable/no_battery" />
 
-    <!-- Button in the center -->
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/centerButton"
+    <LinearLayout
+        android:id="@+id/centerLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:background="@drawable/button_background"
-        android:padding="16dp"
-        android:text="@string/login"
-        android:textColor="#6200EE"
-        android:textSize="18sp"
-        android:textStyle="bold" />
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/checkingButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/button_background"
+            android:padding="16dp"
+            android:text="@string/check"
+            android:textColor="#6200EE"
+            android:textSize="50sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/successButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/button_background"
+            android:padding="16dp"
+            android:text="@string/success"
+            android:textColor="#6200EE"
+            android:textSize="50sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/wifiTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/nfcTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/batteryTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            />
+
+    </LinearLayout>
 
 </RelativeLayout>
