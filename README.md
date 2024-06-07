@@ -7,6 +7,10 @@
 
 ## Video
 - When battery is up to 90%
-https://github.com/bendayaniv/10234-assignment1/assets/52703125/7214e901-379d-4580-b3c3-c9286659d03f
+  
+
+https://github.com/bendayaniv/10234-assignment1/assets/52703125/f02f2a37-1815-47bd-9704-8207e21f6543
+
+
 
 - When battery is lower then 90%
