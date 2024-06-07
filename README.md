@@ -13,4 +13,10 @@ https://github.com/bendayaniv/10234-assignment1/assets/52703125/f02f2a37-1815-47
 
 
 
-- When battery is lower then 90%
+- When battery is lower then 90% and the phone is charging
+
+  
+
+https://github.com/bendayaniv/10234-assignment1/assets/52703125/682ba6fd-1b9d-40fa-9783-a2d107b7f474
+
+
